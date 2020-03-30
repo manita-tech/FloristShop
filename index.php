@@ -73,5 +73,4 @@ echo '</div>';
 echo '';
 echo '</body>';
 echo '</html>';
-echo '';
 ?>
