@@ -1,7 +1,7 @@
 <!-- Florist Shop demo application, Manita Pradhan manirpradhan@gmail.com , DBApps 2020          -->
 <!-- This file represents the demo version of deafault page in application. The home page shows customers list and where you can add order, -->
 <!-- others: flowers, categories, services and about us. -->
-<? php
+<?php
 echo '<html>';
 echo '<head>';
 echo '<meta charset="utf-8">';
