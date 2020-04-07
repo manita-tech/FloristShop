@@ -74,4 +74,4 @@ INSERT INTO Supplier (Shop_Name,Supplier_Id,Address,Telephone_No,Email_Adress,Bu
 INSERT INTO Flower_for_sals (Date_purchased,Date_sold,Flower_id,Customer_id) VALUES ("2019-01-27 14:42:27 "," 2019-01-30 01:37:36 ", 464, 29),(" 2019-01-31 06:43:21 "," 2020-05-23 23:33:15 ", 480, 60),(" 2019-12-05 01:03:47" , "2019-02-05 11:15:59 ",487,57);
 INSERT INTO Sells (Flower_id,SSN) VALUES (371,2519),(393,4484),(469,6228);
 INSERT INTO Batches (Delivered_time,Delivered_date,No_of_flowers,Batch__id,Type_of_flower,Supplier_Id) VALUES ("2019-03-15 "," 2019-05-22  ", 1536, 48," Yellow Daffodils",141),(" 2020-06-12  "," 2019-08-12 ", 1755, 124," White Lotus",228),(" 2020-01-26 "," 2020-05-18 ",998, 173," Red Roses ",162);
-INSERT INTO Sells (Flower_id,Batch__Id) VALUES (371,208),(393,224),(469,275);
+INSERT INTO Have (Flower_id,Batch__Id) VALUES (371,208),(393,224),(469,275);
