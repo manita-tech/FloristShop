@@ -1,0 +1,15 @@
+<?php
+
+$Customer_Name = $_POST['Customer_Name'];
+$Flowers_Ordered = $_POST['Flowers_Ordered'];
+$Selling_price = $_POST['Selling_price'];
+$ Customer_id  = $_POST['Customer_id'];
+
+require('connect.php');
+$result = $conn->query("select * from Customers");
+
+ $sql = "insert into loan values('$Customer_Name', '$Flowers_Ordered', '$Selling_price', 'Customer_id');";
+$result = $conn->query($sql);
+
+      
+?>
