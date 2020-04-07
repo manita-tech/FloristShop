@@ -69,7 +69,7 @@ CREATE TABLE Have
 );
 
 INSERT INTO Employee (Employee_Name,DOB,SSN,Check_in_time,Check_out_time) VALUES ("Demetrius","2019-07-23 ", 1602," 2020-03-08 "," 2020-07-07 "),("Quynn","2019-12-05 ",3499," 2019-05-19 "," 2019-07-28"),("Raphael","2019-09-20 ",6160," 2019-02-08 ","2019-03-08 ");
-INSERT INTO Customers (Customer_Name,Flowers_Ordered,Selling_price,Customer_id) VALUES ("Talon","24","41","a"),("Bianca","59","81","27"),("Aphrodie","61","80","91") ;
+INSERT INTO Customers (Customer_Name,Flowers_Ordered,Selling_price,Customer_id) VALUES ("Talon","24","41","14"),("Bianca","59","81","27"),("Aphrodie","61","80","91") ;
 INSERT INTO Supplier (Shop_Name,Supplier_Id,Address,Telephone_No,Email_Adress,Bulk_Price) VALUES ("Fleur Co   ",150," 5606 Ornare Avenue"," 1-313-315-5141"," fleurco@ipsum.us",7),(" Nature beauty.",204," 2432 Lacus. Rd.."," | 1-669-428-7183 "," Nature.enim@eratvel.org ",34),(" Floral Creations",230," 7128 Aenean Rd. "," 1-208-161-8863 "," floral.elit@etrisusQuisque.co.us",13);
 INSERT INTO Flower_for_sals (Date_purchased,Date_sold,Flower_id,Customer_id) VALUES ("2019-01-27 14:42:27 "," 2019-01-30 01:37:36 ", 464, 29),(" 2019-01-31 06:43:21 "," 2020-05-23 23:33:15 ", 480, 60),(" 2019-12-05 01:03:47" , "2019-02-05 11:15:59 ",487,57);
 INSERT INTO Sells (Flower_id,SSN) VALUES (371,2519),(393,4484),(469,6228);
