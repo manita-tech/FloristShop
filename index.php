@@ -21,6 +21,7 @@ echo '<li class ="active"><a href="#">Home</a></li>';
 echo '<li ><a href="#">Flowers</a></li>';
 echo '<li><a href="#">Categories</a></li>';
 echo '<li><a href="#">Services</a></li>';
+echo'<li><a href="https://docs.google.com/document/d/1UjYQ7gyyTNxzqD1_9x8g2tSFfKG3p2YpDBMjRJe0c5Q/edit?usp=sharing"></i>Help</a></li>';
 echo '<li ><a href="#">About Us</a></li>';
 echo '</ul>';
 echo '';
