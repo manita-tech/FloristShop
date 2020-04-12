@@ -1,77 +1,69 @@
 <!-- Florist Shop demo application, Manita Pradhan manirpradhan@gmail.com , DBApps 2020          -->
 <!-- This file represents the demo version of deafault page in application. The home page shows customers list and where you can add order, -->
 <!-- others: flowers, categories, services and about us. -->
-<?php
-echo '<html>';
-echo '<head>';
-echo '<meta charset="utf-8">';
-echo '<meta name="viewport" content="width=device-width, initial-scale=1">';
-echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">';
-echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>';
-echo '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>';
-echo '</head>';
-echo '<body>';
-echo '<nav nav class="navbar navbar-default">';
-echo '<div class="container-fluid">';
-echo '<div class="navbar-header">';
-echo '<a class="navbar-brand" href="#">Florist Shop</a>';
-echo '</div>';
-echo '<ul class="nav navbar-nav">';
-echo '<li class ="active"><a href="#">Home</a></li>';
-echo '<li ><a href="#">Flowers</a></li>';
-echo '<li><a href="#">Categories</a></li>';
-echo '<li><a href="#">Services</a></li>';
-echo'<li><a href="https://docs.google.com/document/d/1UjYQ7gyyTNxzqD1_9x8g2tSFfKG3p2YpDBMjRJe0c5Q/edit?usp=sharing"></i>Help</a></li>';
-echo '<li ><a href="#">About Us</a></li>';
-echo '</ul>';
-echo '';
-echo '<div class="search-container">';
-echo '<form action="/action_page.php">';
-echo '<input type="text" placeholder="Search.." name="search">';
-echo '<button type="submit">Submit</button>';
-echo '</form>';
-echo '';
-echo '</nav>';
-echo '<div class="container">';
-echo '';
-echo '</table>';
-echo '<table class="table">';
-echo '<h2>Customers</h>';
-echo '<thead>';
-echo '<tr>';
-echo '<th>Customer Name</th>';
-echo '<th>  Flowers Ordered</th>';
-echo '<th>Selling price</th>';
-echo '<th>Customer id</th>';
-echo '</tr>';
-echo '</thead>';
-echo '<tbody>';
-echo '<tr>';
-echo '<td>Talon</td>';
-echo '<td> 24</td>';
-echo '<td>289</td>';
-echo '<td>14</td>';
-echo '</tr>';
-echo '</tbody>';
-echo '</table>';
-echo '<h1>Add order</h1>';
-echo '';
-echo '<form action="/action_page.php">';
-echo '<label for="email">Enter your name:</label>';
-echo '<input type="name" name="name"><br><br>';
-echo '<label for="email">Enter your email:</label>';
-echo '<input type="email" id="email" name="email"><br><br>';
-echo '<label for="Flowers Order">Enter order number:</label>';
-echo '<input type="Flowers Order" name="Flowers Order"><br><br>';
-echo '<input type="submit" value="Submit">';
-echo '';
-echo '</form>';
-echo '';
-echo '</tbody>';
-echo '';
-echo '</table>';
-echo '</div>';
-echo '';
-echo '</body>';
-echo '</html>';
-?>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">Florist Shop</a>
+</div>
+<ul class="nav navbar-nav">
+<li class ="active"><a href="#">Home</a></li>
+<li ><a href="#">Flowers</a></li>
+<li><a href="#">Categories</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="https://docs.google.com/document/d/1zCKMQn-ICuO0UYTWsbXoTXi_xjc6kwRg7ChzHJy5VZk/edit?usp=sharing"></i>Help</a></li>
+<li ><a href="#">About Us</a></li>
+</ul>
+<div class="search-container">
+<form action="/action_page.php">
+<input type="text" placeholder="Search.." name="search"><button type="submit">Submit</button>
+</form></nav>';
+
+require("connect.php");
+$result = $conn->query("select * from Customers");
+while ($row = $result->fetch_assoc()) {
+    echo  $row["Customer_Name"];
+}
+$conn->close();
+
+<div class="container">
+</table>
+<table class="table">
+<h2>Customers</h>
+<thead>
+<tr>
+<th>Customer Name</th>
+<th>  Flowers Ordered</th>
+<th>Selling price</th>
+<th>Customer id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Talon</td>
+<td> 24</td>
+<td>289</td>
+<td>14</td>
+</tr>
+</tbody>
+</table
+><h1>Add order</h1>
+<form action="/action_page.php">
+<label for="email">Enter your name:</label>
+<input type="name" name="name"><br><br>
+<label for="email">Enter your email:</label>
+<input type="email" id="email" name="email"><br><br><label for="Flowers Order">Enter order number:</label><input type="Flowers Order" name="Flowers Order"><br><br>
+<input type="submit" value="Submit">
+</form>
+</tbody></table>
+</div>
