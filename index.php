@@ -28,42 +28,102 @@
 <form action="/action_page.php">
 <input type="text" placeholder="Search.." name="search"><button type="submit">Submit</button>
 </form></nav>';
-
-require("connect.php");
+    
+    <?php
+require('connect.php');
 $result = $conn->query("select * from Customers");
-while ($row = $result->fetch_assoc()) {
-    echo  $row["Customer_Name"];
+?>
+
+<h2>Customers</h2>
+<table border="2" align="center">
+<tr>
+  <td><font color=gray><u>Customer_Name</u></font></td>
+  <td><font color=gray><u>Flowers_Ordered</u></font></td>
+  <td><font color=gray><u>Selling_price</u></font></td>
+  <td><font color=gray><u>Customer_id</u></font></td>
+  
+</tr>
+
+  <?php
+var_dump($_POST);
+   ?> 
+
+<?php
+$sql = "SELECT * from Customers";
+$result = $conn->query($sql);
+$return_arr = array();
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      echo 
+"<tr>
+    <td>{$row['Customer_NAMe']}</td>
+    <td>{$row['Flowers_Ordered']}</td>
+    <td>{$row['Selling_price']}</td>
+    <td>{$row['Customer_id']}</td>
+  
+</tr>\n";
+    }
+} else {
+    echo "0 results";
 }
 $conn->close();
+?>
+    
+    
 
-<div class="container">
-</table>
-<table class="table">
-<h2>Customers</h>
-<thead>
-<tr>
-<th>Customer Name</th>
-<th>  Flowers Ordered</th>
-<th>Selling price</th>
-<th>Customer id</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Talon</td>
-<td> 24</td>
-<td>289</td>
-<td>14</td>
-</tr>
-</tbody>
+
+</script>
+<table id="t1">
+    <caption><font color="gray">Customer Table</font></caption>
+    <colgroup>
+        <col span="2" class="c2">
+        <col>
+        <col class="c1">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Customer Name</th>
+            <th>Flowers Ordered</th>
+            <th>Selling price</th>
+            <th> Customer id</th>
+        </tr>
+    </thead>
+    <tbody id="insertionPoint">
+    
+<h4><font color="gray">Add order</font></h4>
+<style>
+  table, td, th {border: 1px solid black; border-collapse: collapse;}
+</style>
+
+<div class="banner-info" align="center">
+    <span><label>Customer Name </label></span>
+    <span><input id="inputCustomerName" type="text" class="text-center" required="" placeholder="Enter Customer Name"></span><br>
+    <span><label>Flowers Ordered </label></span>
+    <span><input id="inputFlowersOrdered" type="text" class="text-center" required=""></span><br>
+    <span><label>Selling price </label></span>
+    <span><input id="inputSellingprice" type="text" class="text-center" required=""></span><br>
+     <span><label>Customer id </label></span>
+     <span><input id="inputCustomerid" type="text" class="text-center" required=""></span><br>
+</div>
+<div class="logo">
+    <input type="button" onClick="insertData()" value="Add entry">
+</div>
+<script language="javascript">
+    function insertData() {
+        var name = document.getElementById("inputCustomerName").value;
+        var orders = document.getElementById("inputFlowersOrdered").value;
+        var price = document.getElementById("inputSellingprice").value;
+        var id = document.getElementById("inputCustomerid").value;
+        document.getElementById("insertionPoint").innerHTML += "<tr><td>" + name + "</td><td>" + orders + "</td><td>" + price + id + "</td></tr>";
+      
+        // The below part is to clear the values after the entry is added.
+        document.getElementById("inputCustomerName").value = "";
+        document.getElementById("inputFlowersOrdered").value = "";
+        document.getElementById("inputSellingprice").value = "";
+    }
+      
+    </tbody>
 </table
-><h1>Add order</h1>
-<form action="/action_page.php">
-<label for="email">Enter your name:</label>
-<input type="name" name="name"><br><br>
-<label for="email">Enter your email:</label>
-<input type="email" id="email" name="email"><br><br><label for="Flowers Order">Enter order number:</label><input type="Flowers Order" name="Flowers Order"><br><br>
-<input type="submit" value="Submit">
-</form>
 </tbody></table>
 </div>
