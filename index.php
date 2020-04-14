@@ -18,11 +18,11 @@
 </div>
 <ul class="nav navbar-nav">
 <li class ="active"><a href="#">Home</a></li>
-<li ><a href="#">Flowers</a></li>
-<li><a href="#">Categories</a></li>
-<li><a href="#">Services</a></li>
+<li ><a href="Flowers.php">Flowers</a></li>
+<li><a href="Categories.php">Categories</a></li>
+<li><a href="Services.php">Services</a></li>
 <li><a href="https://docs.google.com/document/d/1zCKMQn-ICuO0UYTWsbXoTXi_xjc6kwRg7ChzHJy5VZk/edit?usp=sharing"></i>Help</a></li>
-<li ><a href="#">About Us</a></li>
+<li ><a href="About Us.php">About Us</a></li>
 </ul>
 <div class="search-container">
 <form action="/action_page.php">
