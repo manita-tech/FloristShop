@@ -13,12 +13,12 @@
 <a class="navbar-brand" href="#">Florist Shop</a>
 </div>
 <ul class="nav navbar-nav">
-<li class ><a href="#">Home.php</a></li>
-<li class ="active"><a href="#">Flowers.php</a></li>
-<li class><a href="#">Categories.php</a></li>
-<li class ><a href="#">Services.php</a></li>
+<li class ><a href="Home.php">Home</a></li>
+<li class ="active"><a href="Flowers.php">Flowers</a></li>
+<li class><a href="Categories.php">Categories</a></li>
+<li class ><a href="Services.php">Services.</a></li>
 <li class ><a href="https://docs.google.com/document/d/1zCKMQn-ICuO0UYTWsbXoTXi_xjc6kwRg7ChzHJy5VZk/edit?usp=sharing"></i>Help</a></li>
-<li class ><a href="#">About Us.php</a></li>
+<li class ><a href="About Us.php">About Us</a></li>
 </ul>
 <div class="search-container">
 <form action="/action_page.php">
