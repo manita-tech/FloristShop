@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
       echo 
 "<tr>
-    <td>{$row['Customer_NAMe']}</td>
+    <td>{$row['Customer_Name']}</td>
     <td>{$row['Flowers_Ordered']}</td>
     <td>{$row['Selling_price']}</td>
     <td>{$row['Customer_id']}</td>
