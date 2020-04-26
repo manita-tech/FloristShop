@@ -6,7 +6,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<style>
+body {
+  background-color: mistyrose;
+  opacity: 0.8;
+}
+</style>
 <nav nav class="navbar navbar-default">
 <div class="container-fluid">
 <div class="navbar-header">
@@ -25,4 +30,6 @@
 <input type="text" placeholder="Search.." name="search"><button type="submit">Submit</button>
 </form></nav>';
     
+<center><img src="/image/floristshop.jpg.jpg"  alt="florist shop"></center>
+
    <h1> Welcome to florist shop database🌼<h1>
