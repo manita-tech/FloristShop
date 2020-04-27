@@ -21,8 +21,8 @@ body {
 <a class="navbar-brand" href="#">Florist Shop</a>
 </div>
 <ul class="nav navbar-nav">
-<li class ="active"><a href="#">Home</a></li>
-<li ><a href="Flowers.php">Flowers</a></li>
+<li ><a href="#">Home</a></li>
+<li class ="active"><a href="Flowers.php">Flowers</a></li>
 <li><a href="Categories.php">Categories</a></li>
 <li><a href="https://docs.google.com/document/d/1zCKMQn-ICuO0UYTWsbXoTXi_xjc6kwRg7ChzHJy5VZk/edit?usp=sharing"></i>Help</a></li>
 <li ><a href="About Us.php">About Us</a></li>
