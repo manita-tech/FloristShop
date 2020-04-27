@@ -33,5 +33,10 @@ body {
 <input type="text" placeholder="Search.." name="search"><button type="submit">Submit</button>
 </form></nav>
     
-<center> <img src= "https://image.freepik.com/free-vector/florist-logo_158608-4.jpg" width="400" height="400"></center>
-<center><h2 style="color:grey"> Welcome to florist shop to make new memories with fresh flowers🌼<h2></center>
+<center> <img src= "https://image.freepik.com/free-vector/florist-logo_158608-4.jpg" width="400" height="300"></center>
+<style>
+  h3.italic {
+  font-style: italic;
+}
+</style>
+<center><h3 style="color:grey" class="italic"> Welcome to florist shop to make new memories with fresh flowers🌼</h3></center>
