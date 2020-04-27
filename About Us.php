@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -21,14 +22,21 @@ body {
 <a class="navbar-brand" href="#">Florist Shop</a>
 </div>
 <ul class="nav navbar-nav">
-<li ><a href="#">Home</a></li>
+<li class ="active"><a href="#">Home</a></li>
 <li ><a href="Flowers.php">Flowers</a></li>
 <li><a href="Categories.php">Categories</a></li>
 <li><a href="https://docs.google.com/document/d/1zCKMQn-ICuO0UYTWsbXoTXi_xjc6kwRg7ChzHJy5VZk/edit?usp=sharing"></i>Help</a></li>
-<li class ="active"><a href="About Us.php">About Us</a></li>
+<li ><a href="About Us.php">About Us</a></li>
 </ul>
 <div class="search-container">
 <form action="/action_page.php">
 <input type="text" placeholder="Search.." name="search"><button type="submit">Submit</button>
 </form></nav>
-  <style>
+    
+<center> <img src= "https://www.flashuser.net/wp-content/uploads/2013/04/flower-logo-people.jpg" width="500" height="300"></center>
+<style>
+  h3.italic {
+  font-style: italic;
+}
+</style>
+<center><h3 style="color:grey" class="italic"> We bring fresh flowers with calming vibes. We are located at Charlottesville, Virginia.Do drop by to bring boquet happiness home to your loved ones💐</h3></center>
