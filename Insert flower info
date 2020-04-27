@@ -1,0 +1,15 @@
+<?php
+
+$Type_of_flower = $_POST['Type_of_flower'];
+$ Flower_id  = $_POST['Flower_id'];
+$Price = $_POST['Price'];
+
+
+require('connect.php');
+$result = $conn->query("select * from Flower_for_sale");
+
+ $sql = "insert into loan values('$Type_of_flower', '$Flower_id', 'Price');";
+$result = $conn->query($sql);
+
+      
+?>
