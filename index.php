@@ -45,7 +45,7 @@ $conn->close();
  <table border="2" align="center">
 <tr>
   <td><font color=gray><u>Type_of_flower</u></font></td>
-  <td><font color=grayy><u>Flower_id</u></font></td>
+  <td><font color=gray><u>Flower_id</u></font></td>
   <td><font color=gray><u>Price</u></font></td>
  
 </tr>
