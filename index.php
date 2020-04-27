@@ -42,7 +42,7 @@ $conn->close();
 
 <div class="container">
 <table>
-    <caption>Flowers currently available for sale.</caption>
+    <h3 style="color:grey">Flowers currently available for sale.</h3>
  <table border="2" align="center">
 <tr>
   <td><font color=gray><u>Type_of_flower</u></font></td>
