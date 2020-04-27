@@ -11,8 +11,8 @@
 
 <style>
 body {
-  background-color: mistyrose;
-  opacity: 0.8;
+  background-color: lavenderblush;
+  opacity: 0.7;
 }
 </style>
 <nav nav class="navbar navbar-default">
