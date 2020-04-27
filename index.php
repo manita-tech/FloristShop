@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
 <meta charset="utf-8">
@@ -30,9 +31,11 @@ body {
 <input type="text" placeholder="Search.." name="search"><button type="submit">Submit</button>
 </form></nav>';
     
+  
+  
     <?php
 require('connect.php');
-$result = $conn->query("select * from Flowers_for_sale");
+$result = $conn->query("select * from Flower_for_sale");
 ?>
 }
 $conn->close();
@@ -42,10 +45,9 @@ $conn->close();
     <caption>Flowers currently available for sale.</caption>
  <table border="2" align="center">
 <tr>
-  <td><font color=gray><u>Date_purchased</u></font></td>
-  <td><font color=grayy><u>Date_sold</u></font></td>
+  <td><font color=gray><u>Type_of_flower</u></font></td>
   <td><font color=grayy><u>Flower_id</u></font></td>
-  <td><font color=gray><u>Customer_id</u></font></td>
+  <td><font color=gray><u>Price</u></font></td>
  
 </tr>
 
@@ -58,10 +60,9 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
       echo 
 "<tr>
-    <td>{$row['Date_purchased']}</td>
-    <td>{$row['Date_sold']}</td>
+    <td>{$row['Type_of_flower']}</td>
     <td>{$row['Flower_id']}</td>
-    <td>{$row['Customer_id']}</td>
+    <td>{$row['Price']}</td>
 </tr>\n";
     }
 } else {
@@ -69,10 +70,6 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-   
-  
-
-
       
     </tbody>
 </table
